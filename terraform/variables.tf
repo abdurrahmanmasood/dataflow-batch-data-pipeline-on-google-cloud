@@ -31,5 +31,5 @@ variable "template_gcs_path" {
 }
 
 variable "temp_gcs_location" {
-  description = ""
+  description = "Dataflow temp files location."
 }

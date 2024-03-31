@@ -40,7 +40,6 @@ resource "google_bigquery_table" "table" {
 
 resource "google_dataflow_job" "big_data_job" {
   name              = var.dataflow-job-name
-  template_gcs_path = "gs://my-bucket/templates/template_file"
-  temp_gcs_location = "gs://my-bucket/tmp_dir"
-  }
+  template_gcs_path = var.template_gcs_path
+  temp_gcs_location = var.temp_gcs_location
 }
