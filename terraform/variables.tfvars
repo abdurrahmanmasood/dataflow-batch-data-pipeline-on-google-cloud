@@ -8,3 +8,5 @@ dataset-name = "nyctaxi"
 table-name   = "yellow-tripdata"
 
 dataflow-job-name = "nyctaxi-yellow-tripdata-job"
+template_gcs_path = "gs://my-bucket/templates/template_file"
+temp_gcs_location = "gs://my-bucket/tmp_dir"

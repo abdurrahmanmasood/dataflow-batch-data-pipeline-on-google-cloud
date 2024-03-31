@@ -25,3 +25,11 @@ variable "table-name" {
 variable "dataflow-job-name" {
   description = "Dataflow job name."
 }
+
+variable "template_gcs_path" {
+  description = "Dataflow job name."
+}
+
+variable "temp_gcs_location" {
+  description = ""
+}
