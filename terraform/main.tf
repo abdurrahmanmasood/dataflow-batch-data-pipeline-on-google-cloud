@@ -37,3 +37,13 @@ resource "google_bigquery_table" "table" {
   table_id   = var.table-name
   schema     = jsonencode(jsondecode(file("schema.json")))
 }
+
+resource "google_dataflow_job" "big_data_job" {
+  name              = var.dataflow-job-name
+  template_gcs_path = "gs://my-bucket/templates/template_file"
+  temp_gcs_location = "gs://my-bucket/tmp_dir"
+  parameters = {
+    foo = "bar"
+    baz = "qux"
+  }
+}

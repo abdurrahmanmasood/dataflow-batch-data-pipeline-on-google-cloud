@@ -5,4 +5,6 @@ data-lake-bucket = "data-lake-name"
 temp-file-bucket = "temp-file-bucket-name"
 
 dataset-name = "nyctaxi"
-table-name   = "yellow_tripdata"
+table-name   = "yellow-tripdata"
+
+dataflow-job-name = "nyctaxi-yellow-tripdata-job"

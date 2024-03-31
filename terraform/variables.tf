@@ -21,3 +21,7 @@ variable "dataset-name" {
 variable "table-name" {
   description = "BigQuery table used to store data."
 }
+
+variable "dataflow-job-name" {
+  description = "Dataflow job name."
+}
